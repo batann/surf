@@ -1,0 +1,7 @@
+--- config.def.h
++++ config.def.h
+@@ -103,3 +103,4 @@ static Key keys[] = {
+     { MODKEY|GDK_SHIFT_MASK,GDK_g,      togglegeolocation, { 0 } },
+ };
+ 
++static char *searchengine   = "https://duckduckgo.com/?q=";
