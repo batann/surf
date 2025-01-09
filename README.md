@@ -1,6 +1,5 @@
 # Surf
 
-<code>:s!readme! !g</code>
 <a id="readme-top"></a>
 
 <!-- PROJECT LOGO -->
