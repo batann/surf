@@ -92,32 +92,20 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+In order to build surf you need GTK+ and Webkit/GTK+ header files.
+In order to use the functionality of the url-bar, also install dmenu[0].
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/batann/surf.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin batann/surf
-   git remote -v # confirm the changes
-   ```
+1. Edit config.mk to match your local setup (surf is installed into
+the /usr/local namespace by default).
+
+2. Afterwards enter the following command to build and install surf (if
+necessary as root):
+
+```sh
+sudo make clean install
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,9 +114,16 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- LC - Linux configuration should by default within its bin files also contain a lc-surf file
+  which for now is just the script mentioned below with appropriate permissions, execute as follows:
+  ```sh
+lc-surf URI URI URI ...
+  ```
+- surf URI
+- toggle bookmarks off on browser-start (for now) with "i"
+  
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
